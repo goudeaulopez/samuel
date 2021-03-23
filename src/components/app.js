@@ -18,7 +18,7 @@ class App extends React.Component{
     render(){
         return<div className="main">
             <Header selectWindow={this.selectWindow} option={this.state.option}/>
-            <Navegator onOption={this.onOption}/>
+            <Navegator onOption={this.onOption} />
             <Menu option={this.state.option} selectWindow={this.selectWindow}/>
             <Footer/>
         </div>

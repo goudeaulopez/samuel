@@ -8,15 +8,19 @@ import '../styles/contacto.css'
 const recaptchaRef = React.createRef();
 
 class Contacto extends React.Component {
+
+   state={ answer:''}
+
      onChange= value => {
       console.log(value)
+      this.setState({answer:value})
     }
    
-    onSubmit = formvalue => {
+    onSubmit = (formvalue,dispatch) => {
 
         const ServiceId = process.env.REACT_APP_ServiceId; // "service_hffc4p5"   //
-        const TemplateId =process.env.REACT_APP_TemplateId;  // "template_xr0kbmd" //
-        const UserId =process.env.REACT_APP_UserId;  // "user_bNiJ5jUDIyZYlwLUCplqX"   //
+        const TemplateId = process.env.REACT_APP_TemplateId;  // "template_xr0kbmd" //
+        const UserId = process.env.REACT_APP_UserId;  // "user_bNiJ5jUDIyZYlwLUCplqX"   //
 
       //e.preventDefault()
       recaptchaRef.current.execute();
@@ -35,6 +39,7 @@ class Contacto extends React.Component {
         templateParams,
         UserId
       )
+      dispatch(reset('form1'))
    }
    renderError(meta){
     if( meta.error && meta.touched ){
@@ -81,10 +86,21 @@ inputdescription = formvalue => {
       </div>
   )
 }  //service_n71tjuo
+testingRecaptcha(){
+ if(this.state.answer !== ''){
+   return <div onClick={()=>this.props.selectWindow('')} className="ui green inverted segment" style={{display:'flex',justifyContent:'space-between'}}>
+           <h4>Tu mensaje ha sido enviado exitosamente</h4>
+           <i className="close icon mt-2 ml-5 text-white"></i>
+   </div>
+ }else{
+   <></>
+ }
+}
  render(){
   const ReCaptchakey = process.env.REACT_APP_reCaptcha
      return(
       <div id="contacto" >
+        {this.testingRecaptcha()}
       <div className="ui horizontal segments bg-light ">
            <div className="ui segment">
              <h3 className="ml-4 mt-4">Llamanos </h3>
@@ -105,7 +121,6 @@ inputdescription = formvalue => {
                         label="Nombre Completo"
                         placeholder="Ingrese su nombre completo"
                         component={this.inputname}
-                       
                     />
           </div>
           <div className="two fields">
@@ -114,16 +129,13 @@ inputdescription = formvalue => {
                         label="Telefono"
                         placeholder="Ingrese su telefono"
                         component={this.inputcontact}
-                       
-                    />
-         
-                   <Field
+                   />
+                  <Field
                         name="correoelectronico"
                         label="Correo electronico"
                         placeholder="Ingrese su correo "
                         component={this.inputcontact}
-                       
-                    />
+                  />
           </div>
           <div className="field">
                    <Field
@@ -131,14 +143,13 @@ inputdescription = formvalue => {
                         label="Mensaje"
                         placeholder="Ingrese su mensaje "
                         component={this.inputdescription}
-                       
                     />
           </div>
              
               <button type="submit" className="ui button primary" >Enviar</button>
                <ReCAPTCHA ref={recaptchaRef} 
                 size="invisible" 
-                sitekey= {ReCaptchakey} //"6LeUL4UaAAAAAD8acRMilZP36nQoDdCk_HyCe0Fd"                  //
+                sitekey= {ReCaptchakey} //"6LeUL4UaAAAAAD8acRMilZP36nQoDdCk_HyCe0Fd"//
                 onChange={this.onChange}
            />
           

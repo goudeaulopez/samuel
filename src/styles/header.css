@@ -24,6 +24,11 @@
    margin-right: 13%;
    display: flex;
 }
+.navegator #llamanos a {
+   text-decoration: none;
+   cursor: -webkit-grab; 
+   cursor: grab;
+}
 .navegator  i{
  
    color: #6a5acd;

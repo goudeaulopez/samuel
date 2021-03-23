@@ -12,6 +12,9 @@
     #contacto a{
         font-size: 24px;
         color: slateblue;
+        cursor: -webkit-grab; 
+        cursor: grab;
+        text-decoration: none;
     }
     #contacto p{
         font-size: 16px;

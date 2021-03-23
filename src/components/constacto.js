@@ -138,7 +138,7 @@ inputdescription = formvalue => {
               <button type="submit" className="ui button primary" >Enviar</button>
                <ReCAPTCHA ref={recaptchaRef} 
                 size="invisible" 
-                sitekey= {ReCaptchakey}     //"6LeUL4UaAAAAAD8acRMilZP36nQoDdCk_HyCe0Fd"   //{ReCaptchakey}
+                sitekey= "6LeUL4UaAAAAAD8acRMilZP36nQoDdCk_HyCe0Fd"   //{ReCaptchakey}
                 onChange={this.onChange}
            />
           

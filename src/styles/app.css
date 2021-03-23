@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  .main{
+    width: 100%;
+  }
+}
+ @media only screen and (min-width: 600px) {
+   .main{
+     width: 100%
+
+   }
+   .nav{
+     width: 80%;
+     margin-left: 10%;
+     margin-right: 10%;
+     display: flex;
+     background: #f0f0f5;
+     border-bottom-left-radius:20px;
+     border-bottom-right-radius: 20px;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     margin-top: 5px;
+     justify-content: space-around;
+   }
+   .nav p{
+     font-size: 14px;
+     padding-top: 8px;
+     color: slateblue;
+     font-weight: bold;
+    
+   }
+  
+ 
+}

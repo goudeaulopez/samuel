@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    
+}
+@media only screen and (min-width: 600px) {
+     .empresa{
+         width: 50%;
+         margin-left: 25%;
+         margin-right: 25%;
+         margin-top: 15px;
+         border-radius: 20px;
+     }
+     .empresa p{
+         font-size: 16px;
+         color: slateblue;
+         padding: 8px;
+     }
+     .empresa h5{
+         text-align: right;
+         color: slateblue;
+         font-weight: bold;
+     }
+     .empresa h3{
+        color: slateblue;
+        font-weight: bold;
+     }
+    
+}

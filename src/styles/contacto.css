@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    
+}
+@media only screen and (min-width: 600px) {
+     #contacto{
+         width: 70%;
+         margin-left: 15%;
+         margin-right: 15%;
+         margin-top: 2%;
+         border-radius: 20px;
+     }
+    #contacto a{
+        font-size: 24px;
+        color: slateblue;
+    }
+    #contacto p{
+        font-size: 16px;
+        color: slateblue;
+
+    }
+    #contacto h3{
+        color: slateblue;
+    }
+    #label{
+        color: slateblue;
+    }
+}

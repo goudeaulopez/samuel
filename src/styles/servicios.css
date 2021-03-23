@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    
+}
+@media only screen and (min-width: 600px) {
+     .servicios{
+         width: 60%;
+         margin-left: 20%;
+         margin-right: 20%;
+         margin-top: 1%;
+         border-radius: 20px;
+     }
+     .servicios h3{
+        color: slateblue
+     }
+     .servicios div{
+        color: slateblue
+     }
+     .servicios p{
+        color: slateblue
+     }
+     .servicios h2{
+        color: slateblue;
+        font-weight: bold;
+        
+     }
+        
+}

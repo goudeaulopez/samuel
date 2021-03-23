@@ -15,7 +15,7 @@ const Inicio = () => {
         <Slide autoplay={autoplay} {...properties} >
           <img style={{width:'90%',height:'400px',marginLeft:'5%'}} src="/camion1.png" alt="camion1"/>
           <img style={{width:'90%',height:'400px',marginLeft:'5%'}} src="/camion2.png" alt="camion2"/>
-          <img style={{width:'90%',height:'400px',marginLeft:'5%'}} src="/camion6.png" alt="camion6"/>
+          <img style={{width:'90%',height:'400px',marginLeft:'5%'}} src="/Camion6.png" alt="camion6"/>
           <img style={{width:'90%',height:'400px',marginLeft:'5%'}} src="/camion4.png" alt="camion4"/>
         </Slide>
       </div>

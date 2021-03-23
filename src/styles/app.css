@@ -20,6 +20,8 @@
      border-top-right-radius: 20px;
      margin-top: 5px;
      justify-content: space-around;
+     cursor: -webkit-grab; 
+     cursor: grab;
    }
    .nav p{
      font-size: 14px;

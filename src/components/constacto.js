@@ -14,9 +14,9 @@ class Contacto extends React.Component {
    
     onSubmit = formvalue => {
 
-        const ServiceId =process.env.REACT_APP_ServiceId; // "service_hffc4p5"   //process.env.REACT_APP_ServiceId; //
-        const TemplateId =process.env.REACT_APP_TemplateId;  //  "template_xr0kbmd" //process.env.REACT_APP_TemplateId;  //
-        const UserId =process.env.REACT_APP_UserId;  //   "user_bNiJ5jUDIyZYlwLUCplqX"   //process.env.REACT_APP_UserId;  //
+        const ServiceId = process.env.REACT_APP_ServiceId; // "service_hffc4p5"   //
+        const TemplateId =process.env.REACT_APP_TemplateId;  // "template_xr0kbmd" //
+        const UserId =process.env.REACT_APP_UserId;  // "user_bNiJ5jUDIyZYlwLUCplqX"   //
 
       //e.preventDefault()
       recaptchaRef.current.execute();
@@ -89,8 +89,8 @@ inputdescription = formvalue => {
            <div className="ui segment">
              <h3 className="ml-4 mt-4">Llamanos </h3>
              <p className="pl-4 pt-2">Pregunta por Samuel</p>
-               <a  href="tel:+610426121161"> <i className="phone  icon ml-5 mt-2"> </i>+56 995384364 </a>  <br/>
-               <a  href="https://api.whatsapp.com/send?phone=610426121161"> <i className="whatsapp square icon green ml-5 mt-1"></i>+56 995384364</a>
+               <a  href="tel:+56995384364"> <i className="phone  icon ml-5 mt-2"> </i>+56 995384364 </a>  <br/>
+               <a  href="https://api.whatsapp.com/send?phone=56995384364"> <i className="whatsapp square icon green ml-5 mt-1"></i>+56 995384364</a>
                <p className="pl-4 pt-2">Alternativamente mandanos un mensaje</p>
                <div>
      
@@ -138,7 +138,7 @@ inputdescription = formvalue => {
               <button type="submit" className="ui button primary" >Enviar</button>
                <ReCAPTCHA ref={recaptchaRef} 
                 size="invisible" 
-                sitekey= {ReCaptchakey}
+                sitekey= {ReCaptchakey} //"6LeUL4UaAAAAAD8acRMilZP36nQoDdCk_HyCe0Fd"                  //
                 onChange={this.onChange}
            />
           
